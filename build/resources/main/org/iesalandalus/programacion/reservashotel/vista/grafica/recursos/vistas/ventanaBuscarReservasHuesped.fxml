@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorBuscarReservaHuesped">
+    <children>
+        <Text fill="#333333" layoutX="16.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado Reservas Huesped:" wrappingWidth="274.67926025390625">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tvListadoReservas" layoutX="16.0" layoutY="75.0" prefHeight="307.0" prefWidth="569.0">
+            <columns>
+                <TableColumn fx:id="tvclDni" prefWidth="72.00006103515625" text="Dni" />
+                <TableColumn fx:id="tvclNombre" minWidth="8.79998779296875" prefWidth="55.20001220703125" text="Nombre" />
+                <TableColumn fx:id="tvclIdentificador" prefWidth="51.20001220703125" text="Identificador" />
+                <TableColumn fx:id="tvclTipoHabitacion" prefWidth="63.20001220703125" text="Tipo Habitacion" />
+            <TableColumn fx:id="tvclFechaInicio" prefWidth="65.5999755859375" text="Fecha inicio" />
+            <TableColumn fx:id="tvclFechaFin" prefWidth="88.0" text="Fecha fin" />
+            <TableColumn fx:id="tvclPrecio" prefWidth="88.0" text="Precio" />
+            <TableColumn fx:id="tvclRegimen" prefWidth="81.79998779296875" text="Regimen" />
+            </columns>
+        </TableView>
+      <Label fx:id="lbNombreReservasHuesped" layoutX="286.0" layoutY="35.0" text="Nombre:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tfNombreHuespedReserva" layoutX="338.0" layoutY="32.0" prefHeight="25.0" prefWidth="109.0" promptText="Nombre huesped" />
+      <Label fx:id="lbDniReservasHuesped" layoutX="450.0" layoutY="35.0" text="Dni:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDniHuespedReserva" layoutX="477.0" layoutY="32.0" prefHeight="25.0" prefWidth="109.0" promptText="Dni huesped" />
+    </children>
+</Pane>

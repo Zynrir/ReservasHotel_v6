@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaInsertaHabitacion">
+   <children>
+      <Label layoutX="55.0" layoutY="56.0" text="Planta:" />
+      <Label layoutX="54.0" layoutY="90.0" text="Puerta:" />
+      <Label layoutX="53.0" layoutY="125.0" text="Precio:" />
+      <TextField fx:id="tfPlanta" layoutX="134.0" layoutY="52.0" prefHeight="25.0" prefWidth="58.0" />
+      <TextField fx:id="tfPuerta" layoutX="134.0" layoutY="85.0" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="tfPrecio" layoutX="133.0" layoutY="120.0" prefHeight="25.0" prefWidth="58.0" />
+      <Label layoutX="54.0" layoutY="166.0" text="Tipo Habitacion:" />
+      <HBox alignment="CENTER" layoutX="202.0" layoutY="307.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+         </children>
+      </HBox>
+      <Label layoutX="54.0" layoutY="205.0" text="Numero Camas Individuales:" />
+      <Label layoutX="55.0" layoutY="270.0" text="Baños:" />
+      <Label layoutX="54.0" layoutY="304.0" text="Jacuzzi:" />
+      <RadioButton fx:id="rbUnBanio" layoutX="112.0" layoutY="270.0" mnemonicParsing="false" selected="true" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoBanios" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbDosBanios" layoutX="158.0" layoutY="270.0" mnemonicParsing="false" text="2" toggleGroup="$grupoBanios" />
+      <RadioButton fx:id="rbJacuzziSi" layoutX="111.0" layoutY="304.0" mnemonicParsing="false" text="Si">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoJacuzzi" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbJacuzziNo" layoutX="156.0" layoutY="304.0" mnemonicParsing="false" text="No" toggleGroup="$grupoJacuzzi" />
+      <Label layoutX="54.0" layoutY="238.0" text="Numero Camas Dobles:" />
+      <RadioButton fx:id="rbUnaCamaIndividual" layoutX="254.0" layoutY="202.0" mnemonicParsing="false" text="1">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoCamasIndividuales" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbDosCamasIndividuales" layoutX="300.0" layoutY="202.0" mnemonicParsing="false" text="2" toggleGroup="$grupoCamasIndividuales" />
+      <RadioButton fx:id="rbTresCamasIndividuales" layoutX="347.0" layoutY="202.0" mnemonicParsing="false" text="3" toggleGroup="$grupoCamasIndividuales" />
+      <RadioButton fx:id="rbCeroCamasDobles" layoutX="194.0" layoutY="238.0" mnemonicParsing="false" selected="true" text="0">
+         <toggleGroup>
+            <ToggleGroup fx:id="grupoCamasDobles" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbUnaCamaDoble" layoutX="241.0" layoutY="238.0" mnemonicParsing="false" text="1" toggleGroup="$grupoCamasDobles" />
+      <ComboBox fx:id="cbTipoHabitacion" layoutX="147.0" layoutY="161.0" prefWidth="150.0" />
+      <RadioButton fx:id="rbCeroCamaIndividual" layoutX="211.0" layoutY="203.0" mnemonicParsing="false" selected="true" text="0" toggleGroup="$grupoCamasIndividuales" />
+      <ImageView fitHeight="100.0" fitWidth="101.0" layoutX="466.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/logoAlAndalus.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

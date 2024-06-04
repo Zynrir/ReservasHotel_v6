@@ -1,0 +1,43 @@
+.raiz {
+  -fx-background-color: #dddddd;
+}
+
+
+#menuBar {
+  -fx-background-color: #FCD34D;
+  -fx-padding: 10px;
+}
+
+#menuBar > * {
+  -fx-spacing: 20px;
+}
+
+#menuItems {
+  -fx-font-size: 16px;
+  -fx-font-weight: bold;
+  -fx-text-fill: #fff;
+}
+
+#menuItems:hover {
+  -fx-background-color: #DAA520;
+}
+
+
+.botonPrincipal {
+  -fx-background-color: navy;
+  -fx-border-color: darkblue;
+  -fx-border-width: 3px;
+  -fx-text-fill: WHITE;
+}
+
+.botonPrincipal > .text {
+  -fx-font-family: "HelveticaNeueLTStd-Bd";
+  -fx-font-size: 20.0;
+}
+
+
+.tituloPrincipal {
+  -fx-fill: #333333;
+  -fx-font-family: "HelveticaNeueLTStd-Bd";
+  -fx-font-size: 25.0;
+}

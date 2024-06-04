@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="514.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaCheckIn">
+   <children>
+      <HBox alignment="CENTER" layoutX="142.0" layoutY="149.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+         </children>
+      </HBox>
+      <Label layoutX="88.0" layoutY="54.0" text="Fecha Check In:" />
+      <DatePicker fx:id="dpFechaCheckIn" layoutX="180.0" layoutY="50.0" />
+      <ImageView fitHeight="82.0" fitWidth="82.0" layoutX="405.0" layoutY="145.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/logoAlAndalus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="84.0" layoutY="107.0" text="Hora (hh:mm:ss):" />
+      <TextField fx:id="tfHoraCheckIn" layoutX="183.0" layoutY="103.0" />
+   </children>
+</Pane>

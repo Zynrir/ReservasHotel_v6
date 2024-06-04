@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorBuscarReservaHabitacion">
+    <children>
+        <Text fill="#333333" layoutX="16.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado Reservas Habitacion:" wrappingWidth="309.07928466796875">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tvListadoReservas" layoutX="15.0" layoutY="75.0" prefHeight="307.0" prefWidth="569.0">
+            <columns>
+                <TableColumn fx:id="tvclDni" prefWidth="63.2000150680542" text="Dni" />
+                <TableColumn fx:id="tvclNombre" minWidth="8.79998779296875" prefWidth="57.5999755859375" text="Nombre" />
+                <TableColumn fx:id="tvclIdentificador" prefWidth="73.60003662109375" text="Identificador" />
+                <TableColumn fx:id="tvclTipoHabitacion" prefWidth="85.59996032714844" text="Tipo Habitacion" />
+            <TableColumn fx:id="tvclFechaInicio" prefWidth="54.4000244140625" text="Fecha inicio" />
+            <TableColumn fx:id="tvclFechaFin" prefWidth="69.60003662109375" text="Fecha fin" />
+            <TableColumn fx:id="tvclPrecio" prefWidth="69.60003662109375" text="Precio" />
+            <TableColumn fx:id="tvclRegimen" prefWidth="90.60003662109375" text="Regimen" />
+            </columns>
+        </TableView>
+      <Label fx:id="lbIdentificadorReservasHabitacion" layoutX="353.0" layoutY="34.0" text="Identificador Habitacion:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font></Label>
+      <TextField fx:id="tfIdentificadorHabReservas" layoutX="500.0" layoutY="30.0" prefHeight="25.0" prefWidth="83.0" promptText="Ejemplo: 110" />
+    </children>
+</Pane>
