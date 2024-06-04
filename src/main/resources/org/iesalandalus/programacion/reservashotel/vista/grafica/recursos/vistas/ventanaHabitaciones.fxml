@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaHabitaciones">
+    <children>
+        <Button fx:id="btAgregarHabitaciones" layoutX="36.0" layoutY="38.0" mnemonicParsing="false" onAction="#agregarHabitaciones" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Agregar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btBorrarHabitaciones" layoutX="183.0" layoutY="38.0" mnemonicParsing="false" onAction="#borrarHabitaciones" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Borrar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btBuscarReservasHabitaciones" layoutX="315.0" layoutY="38.0" mnemonicParsing="false" onAction="#buscarReservasHabitaciones" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Buscar Reservas" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Text fill="#333333" layoutX="16.0" layoutY="134.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado Habitaciones:" wrappingWidth="402.67926025390625">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tvListadoHabitaciones" layoutX="16.0" layoutY="154.0" prefHeight="232.0" prefWidth="570.0">
+            <columns>
+                <TableColumn fx:id="tcIdentificador" prefWidth="87.20001220703125" text="Identificador" />
+                <TableColumn fx:id="tcPlanta" minWidth="3.199951171875" prefWidth="62.4000244140625" text="Planta" />
+                <TableColumn fx:id="tcPuerta" prefWidth="78.39996337890625" text="Puerta" />
+                <TableColumn fx:id="tcPrecio" prefWidth="59.20001220703125" text="Precio" />
+                <TableColumn fx:id="tcTipoHabitacion" prefWidth="47.99993896484375" text="Tipo Habitacion" />
+            <TableColumn fx:id="tcCamasInd" prefWidth="52.0" text="Individuales" />
+            <TableColumn fx:id="tcCamasDob" prefWidth="68.0" text="Dobles" />
+            <TableColumn fx:id="tcBanio" minWidth="8.0" prefWidth="49.5999755859375" text="Banio" />
+            <TableColumn fx:id="tcJacuzzi" prefWidth="62.4000244140625" text="Jacuzzi" />
+            </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="mnInsertarHabitacion" mnemonicParsing="false" onAction="#insertaHabitacion" text="Insertar Habitacion" />
+                  <MenuItem fx:id="mnEliminarHabitacion" mnemonicParsing="false" onAction="#eliminaHabitacion" text="Eliminar Habitacion" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+        </TableView>
+      <Label layoutX="348.0" layoutY="121.0" text="Identificador Habitacion:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfIdentificadorHabitacionReserva" layoutX="499.0" layoutY="117.0" prefHeight="25.0" prefWidth="87.0" promptText="Ejemplo: 110" />
+    </children>
+</Pane>

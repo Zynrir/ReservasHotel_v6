@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaInsertaHuesped">
+   <children>
+      <Label layoutX="54.0" layoutY="58.0" text="Nombre:" />
+      <Label layoutX="54.0" layoutY="91.0" text="Dni:" />
+      <Label layoutX="54.0" layoutY="124.0" text="Correo:" />
+      <Label layoutX="53.0" layoutY="155.0" text="Telefono:" />
+      <Label layoutX="53.0" layoutY="214.0" text="Fecha Nacimiento:" />
+      <TextField fx:id="tfNombre" layoutX="119.0" layoutY="54.0" prefHeight="25.0" prefWidth="283.0" />
+      <TextField fx:id="tfDni" layoutX="119.0" layoutY="87.0" prefHeight="25.0" prefWidth="283.0" />
+      <TextField fx:id="tfCorreo" layoutX="119.0" layoutY="120.0" prefHeight="25.0" prefWidth="283.0" />
+      <TextField fx:id="tfTelefono" layoutX="119.0" layoutY="152.0" prefHeight="25.0" prefWidth="283.0" />
+      <DatePicker fx:id="dpFechaNacimiento" layoutX="52.0" layoutY="247.0" />
+      <HBox alignment="CENTER" layoutX="202.0" layoutY="300.0" prefHeight="100.0" prefWidth="200.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnAceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+            <Button fx:id="btnCancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="100.0" fitWidth="101.0" layoutX="466.0" layoutY="260.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/logoAlAndalus.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

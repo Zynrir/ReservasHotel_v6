@@ -1,0 +1,18 @@
+package org.iesalandalus.programacion.reservashotel.modelo.negocio;
+
+import org.iesalandalus.programacion.reservashotel.modelo.dominio.Huesped;
+import javax.naming.OperationNotSupportedException;
+import javax.xml.parsers.ParserConfigurationException;
+import java.util.List;
+
+
+public interface IHuespedes {
+
+    List<Huesped> get();
+    int getTamano();
+    void insertar(Huesped huesped) throws OperationNotSupportedException;
+    Huesped buscar(Huesped huesped);
+    void borrar(Huesped huesped) throws OperationNotSupportedException;
+    void comenzar() throws ParserConfigurationException;
+    void terminar();
+}

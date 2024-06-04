@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><Huespedes>
+    <Huesped Dni="77245136G">
+        <Nombre>andres</Nombre>
+        <Correo>test@test.com</Correo>
+        <Telefono>123456789</Telefono>
+        <Fechanacimiento>2003-12-12</Fechanacimiento>
+    </Huesped>
+    <Huesped Dni="77245136G">
+        <Nombre>jose</Nombre>
+        <Correo>test@test.com</Correo>
+        <Telefono>123456789</Telefono>
+        <Fechanacimiento>2003-12-12</Fechanacimiento>
+    </Huesped>
+    <Huesped Dni="77245136G">
+        <Nombre>juan</Nombre>
+        <Correo>test@test.com</Correo>
+        <Telefono>123456789</Telefono>
+        <Fechanacimiento>2003-12-12</Fechanacimiento>
+    </Huesped>
+    <Huesped Dni="77245136G">
+        <Nombre>antonio</Nombre>
+        <Correo>test@test.com</Correo>
+        <Telefono>123456789</Telefono>
+        <Fechanacimiento>2003-12-12</Fechanacimiento>
+    </Huesped>
+    <Huesped Dni="77245136G">
+        <Nombre>jose</Nombre>
+        <Correo>test@test.com</Correo>
+        <Telefono>123456789</Telefono>
+        <Fechanacimiento>2003-12-12</Fechanacimiento>
+    </Huesped>
+</Huespedes>

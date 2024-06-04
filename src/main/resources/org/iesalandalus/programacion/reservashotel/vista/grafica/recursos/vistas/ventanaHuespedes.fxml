@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaHuespedes">
+    <children>
+        <Button fx:id="btAgregarHuespedes" layoutX="38.0" layoutY="46.0" mnemonicParsing="false" onAction="#agregarHuespedes" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Agregar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btBorrarHuespedes" layoutX="189.0" layoutY="46.0" mnemonicParsing="false" onAction="#borrarHuespedes" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Borrar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btBuscarReservasHuespedes" layoutX="325.0" layoutY="46.0" mnemonicParsing="false" onAction="#buscarReservasHuespedes" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Buscar Reservas" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Text fill="#333333" layoutX="16.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado Huespedes:" wrappingWidth="402.67926025390625">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Text>
+      <TableView fx:id="tvListadoHuespedes" layoutX="16.0" layoutY="161.0" prefHeight="226.0" prefWidth="563.0">
+        <columns>
+          <TableColumn fx:id="tcNombre" prefWidth="162.4000244140625" text="Nombre" />
+          <TableColumn fx:id="tcDni" minWidth="8.79998779296875" prefWidth="74.39996337890625" text="Dni" />
+            <TableColumn fx:id="tcCorreo" prefWidth="126.4000244140625" text="Correo" />
+            <TableColumn fx:id="tcTelefono" prefWidth="88.0" text="Telefono" />
+            <TableColumn fx:id="tcFechaNacimiento" prefWidth="111.99993896484375" text="Fecha nacimiento" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="mnInsertarHuesped" mnemonicParsing="false" onAction="#insertaHuesped" text="Insertar Huesped" />
+                  <MenuItem fx:id="mnEliminarHuesped" mnemonicParsing="false" onAction="#eliminaHuesped" text="Eliminar Huesped" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+      <Label fx:id="lbNombreReservasHuesped" layoutX="282.0" layoutY="123.0" text="Nombre:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNombreHuespedReserva" layoutX="334.0" layoutY="120.0" prefHeight="25.0" prefWidth="109.0" promptText="Nombre huesped" />
+      <Label fx:id="lbDniReservasHuesped" layoutX="446.0" layoutY="123.0" text="Dni:">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDniHuespedReserva" layoutX="473.0" layoutY="120.0" prefHeight="25.0" prefWidth="109.0" promptText="Dni huesped" />
+    </children>
+</Pane>

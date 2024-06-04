@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Habitaciones>
+    <Habitacion Identificador="11">
+        <Planta>1</Planta>
+        <Puerta>1</Puerta>
+        <Precio>50.0</Precio>
+    </Habitacion>
+</Habitaciones>

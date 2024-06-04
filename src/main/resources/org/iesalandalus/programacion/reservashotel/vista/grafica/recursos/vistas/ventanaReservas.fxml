@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.*?>
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #dddddd;" styleClass="raiz" stylesheets="@../estilos/estilos.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.iesalandalus.programacion.reservashotel.vista.grafica.controladores.ControladorVentanaReservas">
+    <children>
+        <Button fx:id="btAgregarReservas" layoutX="22.0" layoutY="40.0" mnemonicParsing="false" onAction="#agregarReservas" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Agregar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btBorrarReservas" layoutX="168.0" layoutY="40.0" mnemonicParsing="false" onAction="#borrarReservas" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Borrar" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="btCheckIn" layoutX="297.0" layoutY="40.0" mnemonicParsing="false" onAction="#checkInReservas" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Check in" textFill="WHITE">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Button>
+        <Text fill="#333333" layoutX="16.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Listado Reservas:" wrappingWidth="402.67926025390625">
+            <font>
+                <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+            </font>
+        </Text>
+        <TableView fx:id="tvListadoReservas" layoutX="16.0" layoutY="154.0" prefHeight="237.0" prefWidth="569.0">
+            <columns>
+                <TableColumn fx:id="tcDni" prefWidth="48.79998779296875" text="Dni" />
+                <TableColumn fx:id="tcNombre" minWidth="8.79998779296875" prefWidth="55.20001220703125" text="Nombre" />
+                <TableColumn fx:id="tcIdentificador" prefWidth="79.2000732421875" text="Identificador" />
+                <TableColumn fx:id="tcTipoHabitacion" prefWidth="71.199951171875" text="Tipo Habitacion" />
+            <TableColumn fx:id="tcFcechaInicio" prefWidth="110.4000244140625" text="Fecha inicio" />
+            <TableColumn fx:id="tcFechaFin" prefWidth="47.20001220703125" text="Fecha fin" />
+            <TableColumn fx:id="tcPrecio" prefWidth="74.39996337890625" text="Precio" />
+            <TableColumn fx:id="tcRegimen" prefWidth="79.20001220703125" text="Regimen" />
+            </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem fx:id="mnInsertarReserva" mnemonicParsing="false" onAction="#insertaReserva" text="Insertar Reserva" />
+                  <MenuItem fx:id="mnEliminaReserva" mnemonicParsing="false" onAction="#eliminaReserva" text="Eliminar Reserva" />
+                  <MenuItem fx:id="mnRealizarCheckIn" mnemonicParsing="false" onAction="#realizaCheckIn" text="Realizar Check In" />
+                  <MenuItem fx:id="mnRealizarCheckOut" mnemonicParsing="false" onAction="#realizaCheckOut" text="Realizar Check Out" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+        </TableView>
+      <Button fx:id="btCheckOut" layoutX="445.0" layoutY="40.0" mnemonicParsing="false" onAction="#checkOutReservas" style="-fx-background-color: navy; -fx-border-color: darkblue; -fx-border-width: 3;" text="Check out" textFill="WHITE">
+         <font>
+            <Font name="HelveticaNeueLTStd-Bd" size="20.0" />
+         </font>
+      </Button>
+    </children>
+</Pane>
